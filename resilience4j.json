@@ -1,0 +1,79 @@
+{
+  "uuid": "2525dc4c-3ca4-4c50-bb56-73108dbba8ab",
+  "lastMigration": 29,
+  "name": "Resilience4j",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "c1b7e5fe-f4ee-4f2b-9940-97fbc8111ccd",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/accounts",
+      "responses": [
+        {
+          "uuid": "b5d1444c-cc11-477f-ae9c-b01924afa266",
+          "body": "[\n  {\n    \"name\" : \"budhi\",\n    \"accountNumber\" : \"7777444421\"\n  },\n  {\n    \"name\" : \"malik\",\n    \"accountNumber\" : \"7777444423\"\n  }\n]",
+          "latency": 1,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id"
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "c1b7e5fe-f4ee-4f2b-9940-97fbc8111ccd"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": []
+}
